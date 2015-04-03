@@ -1,0 +1,20 @@
+<html lang="PT-BR">
+<head>
+<meta charset="utf-8">
+<title>Aula 1</title>
+<link href="cssteste/cssteste.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<h1>Teste de Imagens<h1>
+Testando testando testa testa<!--CSS FUNCIONOU-->
+<?php
+try {
+    $conn = new PDO('mysql:host=localhost;dbname=bancoTeste', "root", "");
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch(PDOException $e) {
+    echo 'ERROR: ' . $e->getMessage();
+}
+?>
+
+</body>
+</html>
